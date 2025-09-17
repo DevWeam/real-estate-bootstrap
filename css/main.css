@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Varela+Round&display=swap');
+
+body {
+    font-family: "Varela Round", sans-serif;
+    background: #ffff;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*To avoid overflow because of the image feature */
+img {
+    max-width: 100%;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*start css to the nav */
+nav {
+    background: #ffff;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* Thers are no dropdown */
+}
+
+nav .collapse li {
+    font-size: 18px;
+    margin: 10px 15px;
+    text-transform: capitalize;
+}
+
+nav .collapse li:hover a {
+    color: #a462e2;
+    transition: 1s ease-in;
+}
+
+nav .register button,
+.modal form button {
+    background-color: #551491;
+    border: 1px solid #551491;
+    color: #ffff;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.navbar-toggler {
+    background-color: #551491;
+    border: 10x solid #551491;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler i {
+    color: #ffff;
+    font-size: 25px;
+}
+
+/* start css to the modal */
+.modal h1 {
+    color: #551491;
+}
+
+.modal form label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.modal form input {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #212121;
+    text-transform: capitalize;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffff;
+    border: 1px solid #ccc;
+}
+
+/* start css to the carousel */
+.carousel img {
+    height: 600px;
+    max-height: 600px;
+}
+
+/* start to css to the scroll */
+.scroll {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #551491;
+    border: 1px solid #551491;
+    color: #ffff;
+    font-size: 22px;
+    position: fixed;
+    bottom: 5%;
+    right: -100%;
+    border-radius: 50%;
+    z-index: 99;
+    line-height: 50px;
+    transition: 1s ease-in-out;
+}
+
+/*The scroll element has the class show, so they write it without a space between them.*/
+.scroll.show {
+    right: 3%;
+}
+
+/*start css to gallery section */
+.gallery {
+    background-color: #eeeeee;
+    padding: 50px 0px;
+}
+
+.gallery .title {
+    text-align: center;
+    margin: 35px 0px;
+    padding: 15px 0px;
+}
+
+.gallery h2 {
+    color: #212121;
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 50px;
+    margin: 10px 0px;
+}
+
+.gallery .title span {
+    color: #551491;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.gallery .box {
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery .box .box-img {
+    overflow: hidden;
+}
+
+.gallery .box .box-img img{
+    transition: 0.6s ease-in-out;
+    width: 100%;
+}
+.gallery .box .box-text {
+    padding: 10px 0px;
+}
+
+.gallery .box .box-text .text-header,
+.gallery .box .box-text .text-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 3px;
+}
+
+.gallery .box .box-text .text-header span:first-of-type {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gallery .box .box-text .text-header span:last-of-type {
+    color: #551491;
+    font-weight: bold;
+}
+
+.gallery .box .box-text .text-middle i {
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #551491;
+}
+
+.gallery .box .box-text .text-footer a {
+    color: #ffff;
+    background-color: #551491;
+    border: 1px solid #551491;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.gallery .box .box-text .text-footer span{
+    color: #212121;
+    font-size: 17px;
+    font-weight: 500;
+}
+.gallery .box :hover.box-img img{
+    transform: scale(1.2)  rotate(5deg);
+} 
+
+/*The button element has the class last-btn,so they write it without a space between them.*/
+.gallery  button.last-btn{
+background-color: transparent;
+border: 1px solid #551491;
+text-align: center;
+/* In order for the button to be in the middle with the element inside it, 
+we must use margin auto and also the display should be block*/
+margin: 50px auto;
+display: block;
+width: 160px;
+height: 50px;
+border-radius: 8px;
+}
+
+.gallery button.last-btn a{
+    color: #551491;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/* start css to the footer */
+footer{
+    background-color:#2b2233;
+    margin-top: 0px;
+    padding-top: 70px;
+}
+
+footer h2{
+color: #ffff;
+font-size: 22px;
+text-transform: capitalize;
+border-bottom: 1px dashed #8c8282;
+padding: 15px 0px;
+}
+
+footer img{
+    width: 100%;
+    height: 250px;
+    margin-left: -70px;
+}
+
+footer .social li{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #551491;
+    border: 1px solid #551491;
+    display: inline-block;
+    margin: 5px 2px;
+    text-align: center;
+}
+
+footer .social li a{
+    color: #ffff;
+}
+
+footer ul{
+    margin-top: 20px;
+}
+
+footer ul li{
+    margin: 15px 0px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+footer ul li a{
+    color: #f6f6f6;
+}
+
+footer .whatsapp{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    color: #ffff;
+}
+
+footer .whatsapp i{
+    color: #551491;
+    margin-right: 10px;
+    font-size: 27px;
+}
